@@ -1,6 +1,4 @@
-.container{
-  margin:0%;
-}
+
 body {
   padding-top: 50px;
 }
@@ -89,16 +87,13 @@ body {
 
 .hobbies{
   background:DarkCyan;
-  text-align:left;
   color:white;
   font-size:30px;
   margin:10px;
-  float:left;
 }
 
 #hob-head{
-  margin-top:10px;
-  margin-bottom:20px;
+  margin-top:20px;
   color:Cyan;
 }
 
@@ -107,8 +102,35 @@ body {
 }
 
 .hobbies img{
-  width:30px;
-  height:30px;
+  width:200px;
+  height:200px;
+  padding:10px;
+  margin:10px;
+  background:Cyan;
+  border:solid White 5px;
+}
+
+@-ms-keyframes imgHover{
+  0%{background:cyan;}
+  100%{color:darkcyan;}
+}
+@-moz-keyframes imgHover{
+  0%{background:cyan;}
+  100%{color:darkcyan;}
+}
+@-webkit-keyframes imgHover{
+  0%{background:cyan;}
+  100%{color:darkcyan;}
+}
+@keyframes imgHover{
+  0%{background:cyan;}
+  100%{color:darkcyan;}
+}
+.hobbies img:hover{
+  -ms-animation:imgHover 1s;
+  -moz-animation:imgHover 1s;
+  -webkit-animation:imgHover 1s;
+  animation:imgHover 1s;
 }
 
 .school{
@@ -116,10 +138,10 @@ body {
   text-align:left;
   color:white;
   font-size:30px;
+  padding:10px;
   margin:10px;
-  float:right;
 }
 
-.school-head{
+#school-head{
   color:Cyan;
 }
