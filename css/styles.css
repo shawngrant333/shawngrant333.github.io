@@ -1,4 +1,6 @@
-
+.container{
+  margin:0%;
+}
 body {
   padding-top: 50px;
 }
@@ -43,7 +45,6 @@ body {
   padding: 50px 15px;
   text-align: center;
   margin-top:25px;
-  margin-bottom:50%
 }
 
 @-ms-keyframes colorShift{
@@ -84,4 +85,41 @@ body {
   -moz-animation:colorShift 5s infinite;
   -webkit-animation:colorShift 5s infinite;
   animation:colorShift 5s infinite;
+}
+
+.hobbies{
+  background:DarkCyan;
+  text-align:left;
+  color:white;
+  font-size:30px;
+  margin:10px;
+  float:left;
+}
+
+#hob-head{
+  margin-top:10px;
+  margin-bottom:20px;
+  color:Cyan;
+}
+
+.hobbies ul{
+  list-style:none;
+}
+
+.hobbies img{
+  width:30px;
+  height:30px;
+}
+
+.school{
+  background:DarkCyan;
+  text-align:left;
+  color:white;
+  font-size:30px;
+  margin:10px;
+  float:right;
+}
+
+.school-head{
+  color:Cyan;
 }
