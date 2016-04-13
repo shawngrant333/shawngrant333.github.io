@@ -3,7 +3,7 @@ body {
 }
 
 #head-name{
-  
+  color:Cyan;
 }
 
 .navbar{
@@ -46,5 +46,27 @@ body {
   padding: 50px 15px;
   text-align: center;
   margin-top:20px;
-  margin-bottom:100%
+}
+
+.main-block h1{
+  color:#2899C8;
+  font-size:50px;
+}
+
+.websites{
+  background:DarkCyan;
+  color:white;
+  font-size:30px;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+#OA{
+  margin:10px;
+  background:#cc000000;
+  border:solid white 5px;
+}
+
+#OA h1{
+  color:Cyan;
 }

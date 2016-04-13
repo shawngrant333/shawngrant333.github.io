@@ -1,14 +1,13 @@
-$(window).scroll(function () { 
-					 $('[id="head-name"]').add(function () {
-											   if (($(this).offset().top - $(window).scrollTop()) < 20)
-											   { 
-												   $(this).stop().fadeTo(100, 0);
-											   }
-											   else
-											   {
-												   $(this).stop().fadeTo('fast', 1);
-											   } 
-										   }); 
-				 });
+if($(window).scrollTop()>20){
+	$("#head-name").fadeTo(1000,0).delay(1000).css("display","none");
+}else{
+	$("#head-name").css("display","block").fadeTo(1000,100);
+}
+
+function scrollTo(id) {
+	$('html, body').animate({ 
+		scrollTop: $(id).offset().top
+		}, 'fast');
+	}
 
 

@@ -112,25 +112,26 @@ body {
 
 @-ms-keyframes imgHover{
   0%{background:cyan;}
-  100%{color:darkcyan;}
+  100%{background:darkcyan;}
 }
 @-moz-keyframes imgHover{
   0%{background:cyan;}
-  100%{color:darkcyan;}
+  100%{background:darkcyan;}
 }
 @-webkit-keyframes imgHover{
   0%{background:cyan;}
-  100%{color:darkcyan;}
+  100%{background:darkcyan;}
 }
 @keyframes imgHover{
   0%{background:cyan;}
-  100%{color:darkcyan;}
+  100%{background:darkcyan;}
 }
 .hobbies img:hover{
   -ms-animation:imgHover 1s;
   -moz-animation:imgHover 1s;
   -webkit-animation:imgHover 1s;
   animation:imgHover 1s;
+  background:DarkCyan;
 }
 
 .school{
