@@ -146,3 +146,8 @@ body {
 #school-head{
   color:Cyan;
 }
+
+#drawing:hover #draw-hover{
+  display:block;
+}
+
