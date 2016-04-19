@@ -79,10 +79,7 @@ body {
 }
 
 #intro{
-  -ms-animation:colorShift 5s infinite;
-  -moz-animation:colorShift 5s infinite;
-  -webkit-animation:colorShift 5s infinite;
-  animation:colorShift 5s infinite;
+  color:Turquoise;
 }
 
 .hobbies{
