@@ -45,39 +45,6 @@ body {
   margin-top:25px;
 }
 
-@-ms-keyframes colorShift{
-  0%{color:red;}
-  20%{color:green;}
-  40%{color:blue;}
-  60%{color:yellow;}
-  80%{color:turquoise;}
-  100%{color:cyan;}
-}
-@-moz-keyframes colorShift{
-  0%{color:red;}
-  20%{color:green;}
-  40%{color:blue;}
-  60%{color:yellow;}
-  80%{color:turquoise;}
-  100%{color:cyan;}
-}
-@-webkit-keyframes colorShift{
-  0%{color:red;}
-  20%{color:green;}
-  40%{color:blue;}
-  60%{color:yellow;}
-  80%{color:turquoise;}
-  100%{color:cyan;}
-}
-@keyframes colorShift{
-  0%{color:red;}
-  20%{color:green;}
-  40%{color:blue;}
-  60%{color:yellow;}
-  80%{color:turquoise;}
-  100%{color:cyan;}
-}
-
 #intro{
   color:Turquoise;
 }

@@ -82,10 +82,6 @@ body {
 }
 
 #contact-list li a:hover{
-  background:DarkTurquoise;
-  border:solid White 5px;
-  -ms-transform:scale(1.4);
-  -moz-transform:scale(1.4);
-  -webkit-transform:scale(1.4);
-  transform:scale(1.4);
+  color:DarkTurquoise;
+  border:solid white 2px;
 }
