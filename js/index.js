@@ -2,11 +2,11 @@ while (true)
 {
 	if ($(window).scrollTop() > 20)
 	{
-		$('#head-name').fadeTo(500, 0).delay(500).css("display", "none");
+		
 	}
 	else
 	{
-		$('#head-name').css("display", "block").fadeTo(500, 100);
+		
 	}
 }
 
