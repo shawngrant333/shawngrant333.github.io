@@ -115,5 +115,8 @@ body {
 
 #contact-list li a:hover{
   color:Red;
-  border:solid Red 4px;
+}
+
+.company{
+  margin-bottom:20px;
 }

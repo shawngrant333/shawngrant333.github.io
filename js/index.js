@@ -2,11 +2,13 @@ while (true)
 {
 	if ($(window).scrollTop() > 20)
 	{
-		
+		var navbar=document.getElementsByClassName('navbar')[0];
+		navbar.style.display="none";
 	}
 	else
 	{
-		
+		var navbar=document.getElementsByClassName('navbar')[0];
+		navbar.style.display="block";
 	}
 }
 
@@ -24,8 +26,8 @@ function HobbyAlert(id){
 	}else if(id=="code"){
 		alert("Programming is my superpower, I spend 80% of my time coding");
 	}else if(id=="web"){
-		alert("I'm surfing the web even when I have no reson to");
+		alert("I'm surfing the web even when I have no reason to");
 	}else if(id=="tv"){
-		alert("When a computer isn't available you'll find me watching some good ole television");
+		alert("When a computer isn't available you'll find me watching some good ol' TV");
 	}
 }
