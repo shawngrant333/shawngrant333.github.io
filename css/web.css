@@ -95,12 +95,26 @@ body {
 
 #OA{
   margin:10px;
+  margin-bottom:2em;
   background:#000000;
   border:dashed white 5px;
   font-family:aero;
 }
 
 #OA h1{
+  color:Red;
+  font-family:dotmatrix;
+}
+
+#OR{
+  margin:10px;
+  margin-bottom:2em;
+  background:#000000;
+  border:dashed white 5px;
+  font-family:aero;
+}
+
+#OR h1{
   color:Red;
   font-family:dotmatrix;
 }
