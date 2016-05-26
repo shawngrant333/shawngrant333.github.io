@@ -32,7 +32,7 @@ body {
 }
 
 .navbar{
-  background:rgba(0,0,0,0.6);
+  background:#3F3F3F;
 }
 
 .nav-center{
@@ -55,7 +55,7 @@ body {
   transition:.5s ease-in-out;
 }
 .nav-center li:hover{
-  background:#400D07;
+  background:#969696;
   -ms-transform:scale(1.2);
   -moz-transform:scale(1.2);
   -webkit-transform:scale(1.2);
@@ -69,7 +69,7 @@ body {
 }
 
 .nav-active{
-  background:#8F160F;
+  background:#969696;
 }
 
 .main-block {
@@ -92,7 +92,7 @@ body {
 }
 
 .title{
-  color:Red;
+  color:#969696;
   font-family:hexa;
   font-size:70px;
 }
@@ -103,20 +103,21 @@ body {
 }
 
 #arrow{
-  margin-bottom:50px;
+  margin-bottom:60px;
 }
 
 .hobbies{
-  background:rgba(0,0,0,0.6);
   font-size:30px;
   margin:10px;
   text-align:center;
-  margin-bottom:30px;
+  margin-bottom:80px;
+  margin-top:60px;
+  border-top:2px solid White;
 }
 
 #hob-head{
   margin-top:20px;
-  color:Red;
+  color:#969696;
   font-family:dotmatrix;
   text-align:left;
 }
@@ -126,66 +127,72 @@ body {
   height:200px;
   padding:10px;
   margin:10px;
-  background:#CC2418;
-  border:solid White 5px;
+  border:solid White 4px;
 }
 
 @-ms-keyframes imgHover{
-  0%{background:#CC2418;}
-  100%{background:#601309;}
+  0%{background:#000000;}
+  100%{background:#ACACAC;}
 }
 @-moz-keyframes imgHover{
-  0%{background:#CC2418;}
-  100%{background:#601309;}
+  0%{background:#000000;}
+  100%{background:#ACACAC;}
 }
 @-webkit-keyframes imgHover{
-  0%{background:#CC2418;}
-  100%{background:#601309;}
+  0%{background:#000000;}
+  100%{background:#ACACAC;}
 }
 @keyframes imgHover{
-  0%{background:#CC2418;}
-  100%{background:#601309;}
+  0%{background:#000000;}
+  100%{background:#ACACAC;}
 }
 .hobbies img:hover{
   -ms-animation:imgHover 1s;
   -moz-animation:imgHover 1s;
   -webkit-animation:imgHover 1s;
   animation:imgHover 1s;
-  background:#601309;
+  background:#ACACAC;
 }
 
 .about{
-  background:rgba(0,0,0,0.6);
   text-align:center;
   color:white;
   font-size:30px;
   padding:10px;
   margin:10px;
   font-family:aero;
-  margin-bottom:30px;
+  margin-bottom:80px;
+  border-top:2px solid White;
 }
 
 .skill{
-  background:rgba(0,0,0,0.6);
   text-align:center;
   color:white;
   font-size:30px;
   padding:10px;
   margin:10px;
   font-family:aero;
-  margin-bottom:30px;
+  margin-bottom:80px;
+  border-top:2px solid White;
 }
 
 #about-head{
   margin-top:20px;
-  color:Red;
+  color:#969696;
   font-family:dotmatrix;
   text-align:left;
 }
 
 #skill-head{
   margin-top:20px;
-  color:Red;
+  color:#969696;
   font-family:dotmatrix;
   text-align:left;
+}
+
+a{
+  color:#33ccff;
+  text-decoration:none;
+}a:hover{
+  text-decoration:none;
 }

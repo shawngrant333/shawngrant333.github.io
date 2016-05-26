@@ -31,7 +31,7 @@ body {
 }
 
 .navbar{
-  background:rgba(0,0,0,0.6);
+  background:#3F3F3F;
 }
 
 .nav-center{
@@ -54,7 +54,7 @@ body {
   transition:.5s ease-in-out;
 }
 .nav-center li:hover{
-  background:#400D07;
+  background:#969696;
   -ms-transform:scale(1.2);
   -moz-transform:scale(1.2);
   -webkit-transform:scale(1.2);
@@ -68,7 +68,7 @@ body {
 }
 
 .nav-active{
-  background:#8F160F;
+  background:#969696;
 }
 
 .main-block {
@@ -81,7 +81,7 @@ body {
 }
 
 .main-block h1{
-  color:Red;
+  color:#969696;
   font-size:50px;
   font-family:hexa;
 }
@@ -119,4 +119,12 @@ body {
 
 .company{
   margin-bottom:20px;
+  border-top:2px solid White;
+}
+
+a{
+  color:#33ccff;
+  text-decoration:none;
+}a:hover{
+  text-decoration:none;
 }

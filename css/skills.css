@@ -31,7 +31,7 @@ body {
 }
 
 .navbar{
-  background:rgba(0,0,0,0.6);
+  background:#3F3F3F;
 }
 
 .nav-center{
@@ -54,7 +54,7 @@ body {
   transition:.5s ease-in-out;
 }
 .nav-center li:hover{
-  background:#400D07;
+  background:#969696;
   -ms-transform:scale(1.2);
   -moz-transform:scale(1.2);
   -webkit-transform:scale(1.2);
@@ -68,7 +68,7 @@ body {
 }
 
 .nav-active{
-  background:#8F160F;
+  background:#969696;
 }
 
 .main-block {
@@ -81,7 +81,7 @@ body {
 }
 
 .main-block h1{
-  color:Red;
+  color:#969696;
   font-size:50px;
   font-family:hexa;
 }
@@ -94,11 +94,11 @@ body {
 }
 
 .ss_cat ul li:hover{
-  background:#D36457;
+  background:#969696;
 }
 
 .ss_cat .active-skill{
-  background:#FF0F00;
+  background:#5F5F5F;
 }
 
 .cat h1{

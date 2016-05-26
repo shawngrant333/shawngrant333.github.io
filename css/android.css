@@ -31,7 +31,7 @@ body {
 }
 
 .navbar{
-  background:rgba(0,0,0,0.6);
+  background:#3F3F3F;
 }
 
 .nav-center{
@@ -54,7 +54,7 @@ body {
   transition:.5s ease-in-out;
 }
 .nav-center li:hover{
-  background:#400D07;
+  background:#969696;
   -ms-transform:scale(1.2);
   -moz-transform:scale(1.2);
   -webkit-transform:scale(1.2);
@@ -68,7 +68,7 @@ body {
 }
 
 .nav-active{
-  background:#8F160F;
+  background:#969696;
 }
 
 .main-block {
@@ -80,42 +80,39 @@ body {
 }
 
 .main-block h1{
-  color:Red;
+  color:#969696;
   font-size:50px;
   font-family:hexa;
 }
 
 @-ms-keyframes imgHover{
-  0%{background:#CC251A;}
-  100%{background:#74180D;}
+  0%{background:#000000;}
+  100%{background:#ACACAC;}
 }
 @-moz-keyframes imgHover{
-  0%{background:#CC251A;}
-  100%{background:#74180D;}
+  0%{background:#000000;}
+  100%{background:#ACACAC;}
 }
 @-webkit-keyframes imgHover{
-  0%{background:#CC251A;}
-  100%{background:#74180D;}
+  0%{background:#000000;}
+  100%{background:#ACACAC;}
 }
 @keyframes imgHover{
-  0%{background:#CC251A;}
-  100%{background:#74180D;}
+  0%{background:#000000;}
+  100%{background:#ACACAC;}
 }
-.categories img{
-  background:#CC251A;
-}
+
 .categories img:hover{
   -ms-animation:imgHover 1s;
   -moz-animation:imgHover 1s;
   -webkit-animation:imgHover 1s;
   animation:imgHover 1s;
-  background:#74180D;
+  background:#ACACAC;
 }
 
 .apps{
   margin-top:20px;
   text-align:center;
-  background:rgba(200,18,0,0.4);
   padding:10px;
   margin-bottom:20px;
 }
