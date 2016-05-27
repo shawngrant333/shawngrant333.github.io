@@ -46,19 +46,43 @@
       </div>
 	  
 	  <div style="margin:5px;" class="categories">
-		<img style="width:40%;height:200px;border:solid white 3px;" src="img/tablet.png">
-		<img style="width:40%;height:200px;float:right;border:solid white 3px;" src="img/game-icon.png">
-	  </div>
-	  
-	  <div class="apps">
-		<img width="150px" height="150px" src="img/android-icon.png">
-		<img width="150px" height="150px" src="img/android-icon.png">
-		<img width="150px" height="150px" src="img/android-icon.png">
-		<img width="150px" height="150px" src="img/android-icon.png">
-		<img width="150px" height="150px" src="img/android-icon.png">
+		<a class="animated slideInUp" href = "javascript:void(0)" onclick = "document.getElementById('dark').style.display='block';document.getElementById('fade').style.display='block';"><img style="width:40%;height:200px;border:solid white 3px;" src="img/tablet.png"></a>
+		<a class="animated slideInLeft" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';"><img style="width:40%;height:200px;float:right;border:solid white 3px;" src="img/game-icon.png"></a>
 	  </div>
 
     </div><!-- container done ya suh -->
+	
+	<div id="dark" class="white_content">
+	  <!--exit button-->
+	  <a href = "javascript:void(0)" onclick = "document.getElementById('dark').style.display='none';document.getElementById('fade').style.display='none'"><span style="font-family:ardestine; font-size:20px; float:right;">X</span></a>
+	  
+	  <h1>APPS</h1>
+	  <ul class="apps-ul">
+		<li><img class="img-circle" src="img/android-icon.png">UBrowser - web browser <a>Download</a></li>
+		<li><img class="img-circle" src="img/android-icon.png">Assistant - voice assistant <a>Download</a></li>
+		<li><img class="img-circle" src="img/android-icon.png">X-Tile - android launcher <a>Download</a></li>
+		<li><img class="img-circle" src="img/android-icon.png">Desktop 10 - android launcher <a>Download</a></li>
+		<li><img class="img-circle" src="img/android-icon.png">Milky Way - galaxy explorer <a>Download</a></li>
+		<li><img class="img-circle" src="img/android-icon.png">PaperPicker - wallpaper app <a>Download</a></li>
+	  </ul>
+	  
+	</div>
+	
+	<!--GAMES-->
+	<div id="light" class="white_content">
+	  <!--exit button-->
+	  <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><span style="font-family:ardestine; font-size:20px; float:right;">X</span></a>
+
+	  <h1>GAMES</h1>
+	  <ul class="apps-ul">
+		<li><img class="img-circle" src="img/android-icon.png">Rover - tank shooter <a>Download</a></li>
+		<li><img class="img-circle" src="img/android-icon.png">Sapce Dodge - evade!! <a>Download</a></li>
+		<li><img class="img-circle" src="img/android-icon.png">Ball Run - roll a ball <a>Download</a></li>
+	  </ul>
+
+	</div>
+	
+	<div id="fade" class="black_overlay"></div>
 
 	<script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
