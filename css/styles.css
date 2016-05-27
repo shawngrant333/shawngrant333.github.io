@@ -21,7 +21,7 @@
   /*body*/
 body {
   padding-top: 50px;
-  background:url('../img/Material_background.png');
+  background:url('../img/Material_background2.jpeg');
   -ms-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -104,6 +104,13 @@ body {
 
 #arrow{
   margin-bottom:60px;
+}
+
+#arrow:hover{
+  -webkit-animation:tada 1s;
+  -moz-animation:tada 1s;
+  -ms-animation:tada 1s;
+  animation:tada 1s;
 }
 
 .hobbies{
