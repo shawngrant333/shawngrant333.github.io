@@ -122,6 +122,13 @@ body {
   border-top:2px solid White;
 }
 
+#mypic{
+  width:150px;
+  height:150px;
+  float:right;
+  margin-bottom:20px;
+}
+
 a{
   color:#33ccff;
   text-decoration:none;
