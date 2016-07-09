@@ -29,7 +29,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav nav-center">
-            <li class="nav-active"><a style="color:white;" href="index.html"><img src="img/home-icon.png">Home</a></li>
+            <li><a style="color:white;" href="index.html"><img src="img/home-icon.png">Home</a></li>
             <li><a style="color:white;" href="android.html"><img src="img/android-icon.png">Android</a></li>
             <li><a style="color:white;" href="web.html"><img src="img/web-icon.png">Web</a></li>
 			<li><a style="color:white;" href="contact.html"><img src="img/phone-icon.png">Contact</a></li>
@@ -43,124 +43,35 @@
       <div class="main-block">
         <h1>My Skillset</h1>
         <p class="lead">A basic sum up of my level of experience in different aspects of programming</p>
-		<img style="width:200px;height:200px;" src="skillset-img/sublimetext.png">
       </div>
-	  
-	  <div class="ss_cat">
-		<center>
-		<ul>
-		  <li onclick="OpenCategoryWeb();scrollTo('#web');" id="web">Web Development</li>
-		  <li onclick="OpenCategoryMobile();scrollTo('#web');" id="mobile">Mobile Development</li>
-		  <li onclick="OpenCategoryOther();scrollTo('#web');" id="other">Other</li>
-		</ul></center>
+	  <center>
+	  <div class="web" style="background:gray;width:300px;padding:5px">
+		<h1>WEB DESIGN</h1>
+		<canvas id="webCanvas" width="300" height="300"></canvas>
+		<h4 style="color:orange">HTML</h4>
+		<h4 style="color:blue">CSS</h4>
+		<h4 style="color:yellow">JAVASCRIPT</h4>
+		<h4 style="color:purple">PHP</h4>
+	  </div>
+	 
+	  <div class="mobile" style="background:gray;width:300px;padding:5px">
+		<h1>MOBILE DEVELOPMENT</h1>
+		<canvas id="mobileCanvas" width="300" height="300"></canvas>
+		<h4 style="color:turquoise">JAVA</h4>
+		<h4 style="color:red">XML</h4>
+		<h4 style="color:black">UNITY</h4>
 	  </div>
 	  
-	  <!--WEB DEVELOPMENT-->
-	  <div class="web-dev cat" style="display:none;">
-		<h1>Web Development</h1>
-		
-		<!--Html Skill-->
-		<div id="ss_html" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-		  <img style="width:200px;height:220px;" src="skillset-img/HTML_Logo.png">
-		  <h1 style="color:white;float:right;font-size:80px;">90%</h1>
-		  </center>
-		</div>
-		
-		<!--CSS Skill-->
-		<div id="ss_css" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/CSS3_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">89%</h1>
-		  </center>
-		</div>
-		
-		<!--JS Skill-->
-		<div id="ss_js" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/Javascript_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">79%</h1>
-		  </center>
-		</div>
-		
-		<!--PHP Skill-->
-		<div id="ss_php" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/php7_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">65%</h1>
-		  </center>
-		</div>
+	  <div class="other" style="background:gray;width:300px;padding:5px">
+		<h1>STANDARD</h1>
+		<canvas id="otherCanvas" width="300" height="300"></canvas>
+		<h4 style="color:green">C</h4>
+		<h4 style="color:white">C++</h4>
+		<h4 style="color:wheat">C#</h4>
 	  </div>
-	  
-	  <!--MOBILE DEVELOPMENT-->
-	  <div class="mobile-dev cat" style="display:none;">
-		<h1>Mobile Development</h1>
-
-		<!--java Skill-->
-		<div id="ss_java" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/Java_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">85%</h1>
-		  </center>
-		</div>
-
-		<!--xml Skill-->
-		<div id="ss_xml" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/xml_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">92%</h1>
-		  </center>
-		</div>
-
-		<!--Unity Skill-->
-		<div id="ss_unity" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/Unity_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">72%</h1>
-		  </center>
-		</div>
-		
-	  </div>
-	  
-	  <!--OTHER SKILLS-->
-	  <div class="other-dev cat" style="display:none;">
-		<h1>OTHER</h1>
-
-		<!--C Skill-->
-		<div id="ss_c" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/c_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">60%</h1>
-		  </center>
-		</div>
-
-		<!--c++ Skill-->
-		<div id="ss_c++" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/cpp_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">50%</h1>
-		  </center>
-		</div>
-
-		<!--c# skill-->
-		<div id="ss_c#" style="margin:10px;border:solid white 3px;background:#969696;">
-		  <center>
-			<img style="width:200px;height:220px;" src="skillset-img/CS_logo.png">
-			<h1 style="color:white;float:right;font-size:80px;">78%</h1>
-		  </center>
-		</div>
-
-	  </div>
-	  
+	  </center>
 	</div>
 	
-	<!--Custom js-->
-	<script src="js/ss_index.js"></script>
-	<script src="js/index.js"></script>
-	<!--Bootstrap & Jquery js-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport fix for Windows 8 problem -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/skill.js"></script>
   </body>
 </html>

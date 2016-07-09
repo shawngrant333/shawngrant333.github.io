@@ -1,16 +1,6 @@
 @font-face {
-  font-family: hexa;
-  src:url('../fonts/Hexa.ttf') format('truetype');
-}
-
-@font-face {
   font-family: ardestine;
   src:url('../fonts/ARDESTINE.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: dotmatrix;
-  src:url('../fonts/dotmatrixregular.ttf') format('truetype');
 }
 
 @font-face {
@@ -20,14 +10,7 @@
 
 body {
   padding-top: 50px;
-  background:url('../img/Material_background.png');
-  -ms-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size:cover;
-  background-size: cover;
-  background-attachment:fixed;
-  background-repeat:no-repeat;
+  background:#323232;
 }
 
 .navbar{
@@ -83,25 +66,9 @@ body {
 .main-block h1{
   color:#969696;
   font-size:50px;
-  font-family:hexa;
 }
 
-.ss_cat ul li{
-  display:inline;
-  padding:10px;
-  font-size:28px;
-  background:#FFFFFF;
-}
-
-.ss_cat ul li:hover{
-  background:#969696;
-}
-
-.ss_cat .active-skill{
-  background:#5F5F5F;
-}
-
-.cat h1{
-  font-family:dotmatrix;
-  color:White;
+.web,.mobile,.other{
+  float:left;
+  margin:5px;
 }
