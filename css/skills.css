@@ -68,6 +68,10 @@ body {
   font-size:50px;
 }
 
+.content{
+  text-align:center;
+}
+
 .web,.mobile,.other{
   float:left;
   margin:5px;
