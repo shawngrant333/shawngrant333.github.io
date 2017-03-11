@@ -1,83 +1,46 @@
-@font-face {
-  font-family: hexa;
-  src:url('../fonts/Hexa.ttf') format('truetype');
-}
+/*custom color to the scrollbar --WEBKIT--*/
+::-webkit-scrollbar {color:#999;background-color:#999;}
+::-webkit-scrollbar-button {color:lightgreen;background-color:lightgreen;}
+::-webkit-scrollbar-track {color:#999;background-color:#999;}
+::-webkit-scrollbar-track-piece {color:#999;background-color:#999;}
+::-webkit-scrollbar-thumb {color:lightgreen;background-color:lightgreen;}
 
 @font-face {
   font-family: ardestine;
   src:url('../fonts/ARDESTINE.ttf') format('truetype');
 }
-
-@font-face {
-  font-family: dotmatrix;
-  src:url('../fonts/dotmatrixregular.ttf') format('truetype');
-}
-
 @font-face {
   font-family: aero;
   src:url('../fonts/aero.ttf') format('truetype');
+}
+@font-face {
+  font-family: amo;
+  src:url('../fonts/AMOceanus.ttf') format('truetype');
+}
+@font-face {
+  font-family: t248;
+  src:url('../fonts/tt0248m_.ttf') format('truetype');
 }
 
   /*body*/
 body {
   padding-top: 50px;
-  background:url('../img/Material_background2.jpeg');
-  -ms-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size:cover;
-  background-size: cover;
-  background-attachment:fixed;
-  background-repeat:no-repeat;
 }
 
 .navbar{
-  background:#3F3F3F;
-}
-
-.nav-center{
-  margin-left:25%;
+  background:#FFF;
 }
 
 #brand{
   font-family:ardestine;
-  font-size:40px;
-}
-
-.nav-center li a{
-  font-size:18px;
-}
-
-.nav-center li{
-  -ms-transition:.5s ease-in-out;
-  -moz-transition:.5s ease-in-out;
-  -webkit-transition:.5s ease-in-out;
-  transition:.5s ease-in-out;
-}
-.nav-center li:hover{
-  background:#969696;
-  -ms-transform:scale(1.2);
-  -moz-transform:scale(1.2);
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
-}
-
-.nav-center li a img{
-  width:20px;
-  height:20px;
-  margin-right:5px;
-}
-
-.nav-active{
-  background:#969696;
+  font-size:30px;
 }
 
 .main-block {
   padding: 50px 15px;
   text-align: center;
   margin-top:25px;
-  color:White;
-  margin-bottom:20px;
+  color:black;
 }
 
 .logo{
@@ -86,6 +49,7 @@ body {
 
 #logo_s{
   font-size:80px;
+  color: #33ccff;
 }
 #logo_g{
   font-size:40px;
@@ -94,44 +58,72 @@ body {
 .title{
   color:#969696;
   font-family:aero;
-  font-size:50px;
-}
-
-.title em{
-  font-family:ardestine;
-  font-size:65px;
+  font-size:40px;
+  margin-bottom: 30px;
 }
 
 #intro{
-  color:White;
+  color:#999;
   font-family:aero;
+  margin-bottom: 30px;
 }
 
-#arrow{
-  margin-bottom:60px;
+#btn-open{
+  color: white;
+  background: cyan;
+  font: tt248;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  border: lightgreen solid 2px;
+}
+#btn-open:hover{
+  background: lightgreen;
 }
 
-#arrow:hover{
-  -webkit-animation:tada 1s;
-  -moz-animation:tada 1s;
-  -ms-animation:tada 1s;
-  animation:tada 1s;
+.portfolio{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-top: #33ccff solid 5px;
+  background: #fff;
+  margin-top: 50px;
+  overflow: scroll;
+  display: none;
+  -ms-animation:slideInUp 1s;
+  -moz-animation:slideInUp 1s;
+  -webkit-animation:slideInUp 1s;
+  animation:slideInUp 1s;
+}
+
+#btn-close{
+  font-size: 20px;
+  color: black;
+  background: #acacac;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 5px;
+  float: right;
 }
 
 .hobbies{
   font-size:30px;
-  margin:10px;
   text-align:center;
   margin-bottom:80px;
-  margin-top:60px;
-  border-top:2px solid White;
+  border-top: 2px solid lightgreen;
 }
 
-#hob-head{
-  margin-top:20px;
+.head{
   color:#969696;
-  font-family:dotmatrix;
-  text-align:left;
+  font-family:aero;
+  text-align:center;
+}
+.lead{
+  font-size:20px;
+  color: black;
 }
 
 .hobbies img{
@@ -139,72 +131,65 @@ body {
   height:200px;
   padding:30px;
   margin:10px;
-  border:solid White 4px;
+  background: #ACACAC;
 }
 
-@-ms-keyframes imgHover{
-  0%{background:#000000;}
-  100%{background:#ACACAC;}
-}
-@-moz-keyframes imgHover{
-  0%{background:#000000;}
-  100%{background:#ACACAC;}
-}
-@-webkit-keyframes imgHover{
-  0%{background:#000000;}
-  100%{background:#ACACAC;}
-}
-@keyframes imgHover{
-  0%{background:#000000;}
-  100%{background:#ACACAC;}
-}
 .hobbies img:hover{
-  -ms-animation:imgHover 1s;
-  -moz-animation:imgHover 1s;
-  -webkit-animation:imgHover 1s;
-  animation:imgHover 1s;
-  background:#ACACAC;
+  -ms-animation:pulse 1s;
+  -moz-animation:pulse 1s;
+  -webkit-animation:pulse 1s;
+  animation:pulse 1s;
 }
 
 .about{
   text-align:center;
-  color:white;
-  font-size:30px;
-  padding:10px;
-  margin:10px;
   font-family:aero;
+  margin-top:50px;
   margin-bottom:80px;
-  border-top:2px solid White;
 }
 
 .skill{
   text-align:center;
-  color:white;
-  font-size:30px;
-  padding:10px;
-  margin:10px;
   font-family:aero;
-  margin-bottom:80px;
-  border-top:2px solid White;
+  border-top: 2px solid yellow;
 }
 
-#about-head{
-  margin-top:20px;
-  color:#969696;
-  font-family:dotmatrix;
-  text-align:left;
+.contact{
+  text-align: center;
+  background: #ACACAC;
+  font-family: aero;
+  padding-bottom:80px;
 }
 
-#skill-head{
-  margin-top:20px;
-  color:#969696;
-  font-family:dotmatrix;
-  text-align:left;
+.contact p{
+  color: white;
+  font-size: 20px;
+}
+
+#cc-p a{
+  color: #33ccff;
+}
+
+.contact ul{
+  border-bottom: 2px solid #33ccff;
+}
+.contact ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contact ul li img{
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.contact ul li img:hover{
+  -webkit-animation:pulse 1s infinite;
+  -moz-animation:pulse 1s infinite;
+  -ms-animation:pulse 1s infinite;
+  animation:pulse 1s infinite;
 }
 
 a{
-  color:#33ccff;
-  text-decoration:none;
-}a:hover{
   text-decoration:none;
 }

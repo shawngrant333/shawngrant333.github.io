@@ -1,21 +1,23 @@
-while (true)
-{
-	if ($(window).scrollTop() > 20)
-	{
-		var navbar=document.getElementsByClassName('navbar')[0];
-		navbar.style.display="none";
-	}
-	else
-	{
-		var navbar=document.getElementsByClassName('navbar')[0];
-		navbar.style.display="block";
-	}
-}
-
 function scrollTo(id) {
-	$('html, body').animate({ 
+	$('html, body').animate({
 								scrollTop: $(id).offset().top
 							}, 'slow');
+}
+
+function OpenPortfolio(){
+	document.getElementsByClassName('portfolio')[0].style="display:block;";
+}
+
+function ClosePortfolio(){
+	document.getElementsByClassName('portfolio')[0].style="display:block;"+
+																												"-ms-animation:slideOutDown 1s;"+
+																												"-moz-animation:slideOutDown 1s;"+
+																											  "-webkit-animation:slideOutDown 1s;"+
+																											  "animation:slideOutDown 1s;";
+
+	setTimeout(function(){
+		document.getElementsByClassName('portfolio')[0].style="display:none;";
+   }, 1000);
 }
 
 function HobbyAlert(id){
@@ -26,8 +28,8 @@ function HobbyAlert(id){
 	}else if(id=="code"){
 		alert("Programming is my superpower, I spend 80% of my time coding");
 	}else if(id=="web"){
-		alert("I'm surfing the web even when I have no reason to");
+		alert("I'm always surfing the web");
 	}else if(id=="tv"){
-		alert("When a computer isn't available you'll find me watching some good ol' TV");
+		alert("You can find me watching some good ol' TV");
 	}
 }
