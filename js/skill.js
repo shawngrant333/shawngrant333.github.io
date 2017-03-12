@@ -11,7 +11,7 @@ function setWebArc() {
 	ctx.strokeStyle = "#C95411";
 	ctx.beginPath();
 	ctx.arc(150, 150, 120, degToRad(270), degToRad(220));
-	ctx.stroke(); 
+	ctx.stroke();
 
 //For CSS
 	ctx.strokeStyle = "#142DDF";
@@ -66,7 +66,7 @@ function setStandardArc() {
 	ctx.stroke();
 
 //For C++
-	ctx.strokeStyle = "#ffffff";
+	ctx.strokeStyle = "#ff7155";
 	ctx.beginPath();
 	ctx.arc(150, 150, 100, degToRad(270), degToRad(80));
 	ctx.stroke();

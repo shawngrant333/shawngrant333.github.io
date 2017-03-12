@@ -25,6 +25,14 @@
   /*body*/
 body {
   padding-top: 50px;
+  background: url('../img/bg.png');
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
 }
 
 .navbar{
@@ -65,7 +73,7 @@ body {
 #intro{
   color:#999;
   font-family:aero;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 #btn-open{
@@ -152,13 +160,30 @@ body {
   text-align:center;
   font-family:aero;
   border-top: 2px solid red;
-  margin-bottom:50px;
+  margin-bottom:80px;
 }
 
-.skill{
+.skills{
   text-align:center;
   font-family:aero;
   border-top: 2px solid yellow;
+  margin-bottom:80px;
+}
+
+.skills ul li{
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.skill{
+  display: inline-block;
+  margin-right: 10px;
+}
+.skill:hover{
+  -webkit-animation:pulse 1s;
+  -moz-animation:pulse 1s;
+  -ms-animation:pulse 1s;
+  animation:pulse 1s;
 }
 
 .contact{
