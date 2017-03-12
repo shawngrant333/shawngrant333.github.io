@@ -148,6 +148,13 @@ body {
   margin-bottom:80px;
 }
 
+.work{
+  text-align:center;
+  font-family:aero;
+  border-top: 2px solid red;
+  margin-bottom:50px;
+}
+
 .skill{
   text-align:center;
   font-family:aero;
