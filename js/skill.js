@@ -9,6 +9,6 @@ for (var i = 0; i < canvases.length; i++){
 	ctx.font = "20px arial";
 	ctx.fillText(name,5,25);
 
-	ctx.fillStyle = color;
+	ctx.fillStyle = "#33ccff";
 	ctx.fillRect(canvas.width - 20,0,20,30);
 }

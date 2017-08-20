@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is my personal web-portfolio">
     <meta name="author" content="Shawn Grant">
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/SG_logo.png">
     <title>Shawn Grant</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,13 +36,10 @@
 	      <h1 class="title">Shawn Grant</h1>
         <h3 id="intro">Android Developer | Web Designer</h3><br>
 
-        <a href="#" onclick="OpenPortfolio(); return false" id="btn-open">Open Portfolio</a>
+        <a onclick="scrollTo(arrow)" id="arrow"><img class="animated bounce infinite" width="80px" height="40px" src="img/Arrow.png"></a>
       </div>
 
-      <div class="portfolio">
-        <div style="margin-top:20px;">
-          <a href="#" onclick="ClosePortfolio(); return false" id="btn-close">Close</a>
-        </div>
+      <div id="portfolio" class="portfolio">
 
         <div class="about">
          <p class="lead">
@@ -54,75 +51,84 @@
     	  <div class="hobbies">
       		<h2 class="head">MY HOBBIES</h2>
 
-      		<img class="img-circle" id="drawing" src="img/pencil-xxl.png">
-      		<img class="img-circle" id="music" src="img/music-2-xxl.png">
-      		<img class="img-circle" id="code" src="img/code-xxl.png">
-      		<img class="img-circle" id="web" src="img/mouse-xxl.png">
-      		<img class="img-circle" id="tv" src="img/tv-xxl.png">
+      		<img id="drawing" src="img/pencil-xxl.png">
+      		<img id="music" src="img/music-2-xxl.png">
+      		<img id="code" src="img/code-xxl.png">
+      		<img id="web" src="img/web-icon.png">
+      		<img id="tv" src="img/tv-xxl.png">
     	  </div>
 
         <div class="work">
           <h2 class="head">MY WORK</h2>
+          <!--TABS-->
+          <div class="tab">
+            <button id="DefaultTab" class="tablinks" onclick="openCity(event, 'Websites')">Websites</button>
+            <button class="tablinks" onclick="openCity(event, 'Unity')">Unity Games</button>
+            <button class="tablinks" onclick="openCity(event, 'Android')">Android</button>
+          </div>
 
-          <div class="w3-content w3-display-container">
+          <!--WEB-->
+          <div id="Websites" class="tabcontent">
+            <img style="margin-bottom:10px;" width="50px" height="50px" src ="img/website.png">
+            <ul>
+              <!--OR-->
+              <li>
+                <h3 id="projname">
+                  <img width="50px" height="50px" src ="img/work/omegareno.png"> Omega Renovation| <a href="http://omegarenovation.ca"> visit</a></h3>
+                <p id="desc">Official website of a Canadian home renovation company.</p>
+              </li>
 
-            <div class="w3-display-container mySlides">
-              <img src="img/work/omegarenovation.jpg" style="width:100%; height:350px;">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Omega Renovation |<a href="http://omegarenovation.ca"> visit</a>
-              </div>
-            </div>
+              <!--Cortechx-->
+              <li>
+                <h3 id="projname">
+                  <img width="50px" height="50px" src ="img/work/cortechx.png"> Cortechx| <a href="http://cortechx.github.io"> visit</a></h3>
+                <p id="desc">Website of my development team.</p>
+              </li>
+            </ul>
+          </div>
 
-            <div class="w3-display-container mySlides">
-              <img src="img/work/legalerie.jpg" style="width:100%; height:350px;">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Le Galerie |<a href="http://shawn-grant.github.io/LeGalerie/"> visit</a>
-              </div>
-            </div>
+          <!--UNITY-->
+          <div id="Unity" class="tabcontent">
+            <img style="margin-bottom:10px;" width="50px" height="50px" src ="img/unity.png">
+            <ul>
+              <!--Dopple-->
+              <li>
+                <h3 id="projname">
+                  <img width="50px" height="50px" src ="img/unity.png"> Dopple| <a href="#"> Unreleased</a></h3>
+                <p id="desc">Color and Shape matching game.</p>
+              </li>
 
-            <div class="w3-display-container mySlides">
-              <img src="img/work/cortechx.jpg" style="width:100%; height:350px;">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Cortechx |<a href="http://cortechx.github.io/"> visit</a>
-              </div>
-            </div>
+              <!--Helio-->
+              <li>
+                <h3 id="projname">
+                  <img width="50px" height="50px" src ="img/unity.png"> Helio| <a href="#"> In development</a>
+                  <a href="https://www.instagram.com/p/BXJGA2xhDTK/">Learn More</a></h3>
+                <p id="desc">Sci fi action style runner.</p>
+              </li>
+            </ul>
+          </div>
 
-			<div class="w3-display-container mySlides">
-              <img src="img/work/ubrowser.jpg" style="width:100%; height:350px;">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                UBrowser |<a href="#"> Download</a>
-              </div>
-            </div>
+          <!--ANDROID-->
+          <div id="Android" class="tabcontent">
+            <img style="margin-bottom:10px;" width="50px" height="50px" src ="img/android.png">
 
-			<div class="w3-display-container mySlides">
-              <img src="img/work/talk2me.jpg" style="width:100%; height:350px;">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Talk2Me |<a href="#"> Download</a>
-              </div>
-            </div>
-
-            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
           </div>
 
         </div>
 
     	  <div class="skills">
-      		<center><h2 class="head">MY SKILLS</h2></center>
-          <img style="float:right;margin-top:5%;margin-right:5%" width="200px" height="200px"
-          src="https://lh3.googleusercontent.com/-EOBK5ZVw7vA/VW7cpmA4iiI/AAAAAAAAABY/LSas4itt5KQ/w1200-h1200/smith_icon.png">
+      		<center>
+            <h2 class="head">MY SKILLS</h2>  </center>
 
-          <ul>
-            <!--500 max-->
-            <li><canvas class="Skill HTML orange" width="500px" height="30px" style="border:black solid 2px"></canvas></li>
-            <li><canvas class="Skill CSS blue" width="460px" height="30px" style="border:black solid 2px"></canvas></li>
-            <li><canvas class="Skill Java red" width="450px" height="30px" style="border:black solid 2px"></canvas></li>
-            <li><canvas class="Skill JavaScript yellow" width="440px" height="30px" style="border:black solid 2px"></canvas></li>
-            <li><canvas class="Skill Android green" width="420px" height="30px" style="border:black solid 2px"></canvas></li>
-            <li><canvas class="Skill XML darkred" width="420px" height="30px" style="border:black solid 2px"></canvas></li>
-            <li><canvas class="Skill C# wheat" width="400px" height="30px" style="border:black solid 2px"></canvas></li>
-            <li><canvas class="Skill Unity3D black" width="300px" height="30px" style="border:black solid 2px"></canvas></li>
-          </ul>
+            <div style="margin-left:5px;margin-right:5px">
+              <div style="border-right:solid 5px orange;border-radius:5px;padding-left:5px;width:100%;height:30px;background:gray;color:white;"><h4>HTML</h4></div>
+              <div style="border-right:solid 5px blue;border-radius:5px;padding-left:5px;width:95%;height:30px;background:gray;color:white;"><h4>CSS</h4></div>
+              <div style="border-right:solid 5px yellow;border-radius:5px;padding-left:5px;width:90%;height:30px;background:gray;color:white;"><h4>Javascript</h4></div>
+              <div style="border-right:solid 5px red;border-radius:5px;padding-left:5px;width:80%;height:30px;background:gray;color:white;"><h4>Java</h4></div>
+              <div style="border-right:solid 5px green;border-radius:5px;padding-left:5px;width:75%;height:30px;background:gray;color:white;"><h4>Android development</h4></div>
+              <div style="border-right:solid 5px black;border-radius:5px;padding-left:5px;width:65%;height:30px;background:gray;color:white;"><h4>Unity 3D</h4></div>
+            </div>
+
 
       	</div>
 
@@ -136,9 +142,11 @@
             <li><a href="http://github.com/shawn-grant"><img src="img/Git-Icon-White.png" alt="gh"></a></li>
           </ul>
 
-          <p style="font-family:t248;border-bottom: 2px solid #33ccff;">Email: shawngrant333@gmail.com <br>Whatsapp: +1(876) 443-5236</p> <br>
+          <p style="font-family:arial;">
+            <img width="20px" height="20px" src ="img/email.png"> shawngrant333@gmail.com <br>
+            <img width="20px" height="20px" src ="img/phone-icon.png"> +1(876) 378-0190</p><b>
 
-          <p id="cc-p">Company website: <a href="http://cortechx.github.io">CORTECHX</a></p>
+          <a id="ctx" href="http://cortechx.github.io">CORTECHX</a>
         </div>
 
       </div>
@@ -146,11 +154,8 @@
 
   	<!--my javascript-->
   	<script src="js/index.js"></script>
-    <script src="js/skill.js"></script>
   	<!--bootstrap JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport fix for Windows 8 problem -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

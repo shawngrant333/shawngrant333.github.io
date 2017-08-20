@@ -36,7 +36,7 @@ body {
 }
 
 .navbar{
-  background:#000;
+  background:gray;
 }
 
 #brand{
@@ -52,7 +52,6 @@ body {
 }
 
 
-
 .title{
   color:black;
   font-family:aero;
@@ -66,42 +65,12 @@ body {
   margin-bottom: 80px;
 }
 
-#btn-open{
-  color: black;
-  font-family: t248;
-  font-size: 30px;
-  padding: 5px;
-  border: black solid 2px;
-}
-#btn-open:hover{
-  background: black;
-  color: white;
+#arrow{
+  webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
 }
 
 .portfolio{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background: #fff;
-  margin-top: 50px;
-  overflow: scroll;
-  display: none;
-  -ms-animation:slideInUp 1s;
-  -moz-animation:slideInUp 1s;
-  -webkit-animation:slideInUp 1s;
-  animation:slideInUp 1s;
-}
-
-#btn-close{
-  font-size: 20px;
-  color: black;
-  border: black solid 2px;
-  padding: 5px;
-  margin-right: 5px;
-  float: right;
 }
 
 .hobbies{
@@ -127,8 +96,8 @@ body {
   height:100px;
   padding:0px;
   margin:10px;
-  background: #000;
-  border: #33ccff solid 3px;
+  webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
 }
 
 .hobbies img:hover{
@@ -140,14 +109,7 @@ body {
 
 .about{
   text-align:center;
-  margin-top:50px;
-  margin-bottom:50px;
-}
-
-.work{
-  text-align:center;
-  font-family:aero;
-  border-top: 2px solid gray;
+  margin-top:80px;
   margin-bottom:50px;
 }
 
@@ -155,35 +117,25 @@ body {
   font-family:aero;
   border-top: 2px solid gray;
   margin-bottom:50px;
-}
-
-.Skill:hover{
-  -webkit-animation:pulse 1s;
-  -moz-animation:pulse 1s;
-  -ms-animation:pulse 1s;
-  animation:pulse 1s;
+  margin-top: 50px;
 }
 
 .contact{
   text-align: center;
   background: #000;
   font-family: aero;
-  padding-bottom:80px;
+  border-radius: 10px;
 }
 
 .contact p{
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-#c-p, #cc-p{
+#c-p{
   font-family: t248;
-}
 
-#cc-p a{
-  color: #33ccff;
   font-size: 20px;
-  font-family: t248;
 }
 
 .contact ul li{
@@ -205,4 +157,94 @@ body {
 
 a{
   text-decoration:none;
+}
+
+
+
+
+/*WORK*/
+
+.work{
+  border-top: 2px solid gray;
+  margin-top: 50px;
+}
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: gray;
+    color: white;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: darkgray;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.tabcontent ul li{
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.tabcontent ul li a{
+  background: #33ccff;
+  font-family: arial;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px black;
+}
+.tabcontent ul li a:hover{
+  background: cyan;
+}
+
+#projname{
+  font-family: aero;
+}
+
+#desc{
+  font-family: t248;
+  color: gray;
+   text-indent: 50px;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
