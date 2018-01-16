@@ -18,7 +18,7 @@
   /*body*/
 body {
   padding-top: 50px;
-  background: #fff;
+  background: #000;
   -ms-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -29,7 +29,8 @@ body {
 }
 
 .navbar{
-  background:gray;
+  background:rgba(0,0,0,0);
+  border: none;
 }
 
 #brand{
@@ -40,16 +41,26 @@ body {
 .main-block {
   padding: 50px 15px;
   text-align: center;
-  margin-top:25px;
+  margin-top:30px;
+  padding-bottom:150px;
   color:black;
+  background: url('../img/BG/introBg.jpg');
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
 }
 
 
 .title{
-  color:black;
+  color:white;
   font-family:aero;
-  font-size:40px;
+  font-size:30px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #intro{
@@ -63,14 +74,19 @@ body {
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
 }
 
-.portfolio{
-}
 
 .hobbies{
   font-size:30px;
   text-align:center;
-  margin-bottom:10px;
-  border-top: 2px solid gray;
+  padding: 100px;
+  background: url('../img/BG/hobbiesBg.jpg');
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
 }
 
 .head{
@@ -81,7 +97,6 @@ body {
 .lead{
   font-size:20px;
   font-family:t248;
-  color: black;
 }
 
 .hobbies img{
@@ -102,22 +117,38 @@ body {
 
 .about{
   text-align:center;
-  margin-top:80px;
-  margin-bottom:50px;
+  padding: 100px;
+  border-bottom: solid 2px #33ccff;
+  background: url('../img/BG/aboutBg.jpg');
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
 }
 
 .skills{
   font-family:aero;
-  border-top: 2px solid gray;
-  margin-bottom:50px;
-  margin-top: 50px;
+  border-top: 2px solid #33ccff;
+  padding: 80px;
+  background: url('../img/BG/skillsBg.jpg');
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
 }
 
 .contact{
   text-align: center;
   background: #000;
   font-family: aero;
-  border-radius: 10px;
+  padding: 70px;
+  border-top: 2px solid #33ccff;
 }
 
 .contact p{
@@ -158,87 +189,33 @@ a{
 /*WORK*/
 
 .work{
-  border-top: 2px solid gray;
-  margin-top: 50px;
-}
-/* Style the tab */
-div.tab {
-    border: 1px solid #ccc;
-    background-color: gray;
-    color: white;
-    overflow: auto;
-    white-space: nowrap;
+  border-top: 2px solid #33ccff;
+  padding: 100px;
+  background: #535353;
 }
 
-/* Style the buttons inside the tab */
-div.tab button {
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    display: inline-block;
+.work a{
+	background:#fff;
+	color:black;
+	border-right:5px solid #33ccff;
+	padding-right:10px;
+	padding-left:10px;
+	font-size:20px;
 }
 
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: darkgray;
+.project{
+	display: inline-block;
+	box-shadow: 10px 15px 10px rgba(0,0,0,0.5);
+	width:300px;
+	height: 310px;
+	margin:5px;
+	border:2px solid #33ccff;
 }
-
-/* Create an active/current tablink class */
-div.tab button.active {
-    background-color: #ccc;
+.project img{
+	width:200px;
+	height:200px;
+	margin:5px;
 }
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-
-.tabcontent {
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-
-.tabcontent ul li{
-  border: 2px solid gray;
-  border-radius: 10px;
-  margin-bottom: 5px;
-}
-
-.tabcontent ul li a{
-  background: #33ccff;
-  font-family: arial;
-  font-size: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-decoration: none;
-  box-shadow: 5px 5px 10px black;
-}
-.tabcontent ul li a:hover{
-  background: cyan;
-}
-
-#projname{
-  font-family: aero;
-}
-
-#desc{
-  font-family: t248;
-  color: gray;
-   text-indent: 50px;
-}
-
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.project h3{
+	color: black;
 }
