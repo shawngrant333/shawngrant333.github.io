@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is my personal web-portfolio">
     <meta name="author" content="Shawn Grant">
-    <link rel="icon" href="img/SG_Logo_mk2.png">
+    <link rel="icon" href="img/Logo/SG_Logo_mk2.png">
     <title>Shawn Grant</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,6 +14,8 @@
     <link href="css/styles.css" rel="stylesheet">
     <!-- Animate CSS -->
 	  <link href="css/animate.min.css" rel="stylesheet">
+    <!-- Circle CSS -->
+    <link rel="stylesheet" href="css/circle.css">
   </head>
 
   <body>
@@ -22,16 +24,16 @@
       <div class="container">
         <div class="navbar-header">
 
-		  <a class="navbar-brand"><font id="brand" color="#33ccff">S</font><font id="brand" color="white">G</font></a>
+		  <a class="navbar-brand"><font id="brand" color="#33ccff">S</font><font id="brand" color="black">G</font></a>
         </div>
       </div>
     </div><!--navbar end-->
 
 
       <div class="main-block">
-	      <img width="200px" height="200px" src="img/Logo/SG_Logo_mk3.png">
-	      <h1 class="title">Shawn Grant</h1>
-        <h3 id="intro">Android Developer | Web Designer</h3><br>
+        <h1 class="title">Shawn Grant</h1>
+        <h3 id="intro">Android Developer | Web Designer</h3>
+	      <img id="main-pic" width="300px" height="100%" src="img/Logo/Shawn_Flat.png"><br>
 
         <a onclick="scrollTo(arrow)" id="arrow"><img class="animated bounce infinite" width="80px" height="40px" src="img/Arrow.png"></a>
       </div>
@@ -88,22 +90,65 @@
       			</div>
 
       		</center>
-
         </div>
 
     	  <div class="skills">
       		<center>
-            <h2 class="head">MY SKILLS</h2>  </center>
+            <h2 class="head" style="color:black;">MY SKILLS</h2>
+          </center>
 
-            <div style="margin-left:5px;margin-right:5px">
-              <div style="border-right:solid 5px orange;border-radius:5px;padding-left:5px;width:100%;height:30px;background:gray;color:white;"><h4>HTML</h4></div>
-              <div style="border-right:solid 5px blue;border-radius:5px;padding-left:5px;width:95%;height:30px;background:gray;color:white;"><h4>CSS</h4></div>
-              <div style="border-right:solid 5px yellow;border-radius:5px;padding-left:5px;width:90%;height:30px;background:gray;color:white;"><h4>Javascript</h4></div>
-              <div style="border-right:solid 5px red;border-radius:5px;padding-left:5px;width:80%;height:30px;background:gray;color:white;"><h4>Java</h4></div>
-              <div style="border-right:solid 5px green;border-radius:5px;padding-left:5px;width:75%;height:30px;background:gray;color:white;"><h4>Android development</h4></div>
-              <div style="border-right:solid 5px black;border-radius:5px;padding-left:5px;width:65%;height:30px;background:gray;color:white;"><h4>Unity 3D</h4></div>
+            <div>
+              <!--HTML-->
+              <div class="c100 p90 big blue">
+                <span>HTML</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+              <!--CSS-->
+              <div class="c100 p70 big blue">
+                <span>CSS</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+              <!--JS-->
+              <div class="c100 p60 big blue">
+                <span>JS</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+
+              <!--JAVA-->
+              <div class="c100 p50 big blue">
+                <span>JAVA</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+              <!--ANDROID-->
+              <div class="c100 p70 big blue">
+                <span>ANDROID</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+              <!--UNITY-->
+              <div class="c100 p80 big blue">
+                <span>UNITY</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+
             </div>
-
 
       	</div>
 
@@ -130,7 +175,7 @@
 
   	<!--my javascript-->
   	<script src="js/index.js"></script>
-  	<!--bootstrap JS-->
+  	<!--bootstrap and jquery JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
