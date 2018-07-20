@@ -70,6 +70,7 @@ body {
   text-align:center;
   padding: 10px;
   background: #999;
+  padding-bottom: 50px;
 }
 
 .head{
@@ -153,14 +154,11 @@ a{
   text-decoration:none;
 }
 
-
-
-
 /*WORK*/
 
 .work{
-  padding: 50px;
-  background: #999;
+  padding: 10px;
+  background: #727272;
 }
 
 .work a{
@@ -170,21 +168,4 @@ a{
 	padding-right:10px;
 	padding-left:10px;
 	font-size:20px;
-}
-
-.project{
-	display: inline-block;
-	box-shadow: 10px 15px 10px rgba(0,0,0,0.5);
-	width:300px;
-	height: 310px;
-	margin:5px;
-	border:2px solid #33ccff;
-}
-.project img{
-	width:200px;
-	height:200px;
-	margin:5px;
-}
-.project h3{
-	color: black;
 }
