@@ -68,7 +68,7 @@ body {
 .hobbies{
   font-size:30px;
   text-align:center;
-  padding: 100px;
+  padding: 10px;
   background: #999;
 }
 
@@ -84,10 +84,10 @@ body {
 }
 
 .hobbies img{
-  width:100px;
-  height:100px;
+  width:80px;
+  height:80px;
   padding:0px;
-  margin:10px;
+  margin:5px;
   webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
 }
@@ -109,10 +109,10 @@ body {
 .skills{
   font-family:aero;
   border-top: 10px solid #33ccff;
-  margin-bottom: 200px;
   padding: 50px;
   background: white;
 }
+
 
 .contact{
   text-align: center;
