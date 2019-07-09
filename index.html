@@ -20,162 +20,174 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
+    <div class="main-block">
+      <h1 class="title">Shawn Grant</h1>
+      <h3 id="intro">Android Developer | Web Designer | Graphic Designer</h3>
+      <img id="main-pic" width="300px" height="100%" src="img/Logo/Shawn_Flat.png"><br>
+    </div>
 
-		  <a class="navbar-brand"><font id="brand" color="#33ccff">S</font><font id="brand" color="black">G</font></a>
-        </div>
+    <div id="portfolio" class="portfolio">
+
+      <div class="about">
+        <h2>Hi, I'm Shawn.</h2>
+        <p style="color:black; font-size: 17px;">
+          I am a student at Campion College, Jamaica;<br>
+          I prefer to express myself with code and art. I encourage good competition and new ideas.
+        </p>
       </div>
-    </div><!--navbar end-->
 
-      <div class="main-block">
-        <h1 class="title">Shawn Grant</h1>
-        <h3 id="intro">Android Developer | Web Designer</h3>
-	      <img id="main-pic" width="300px" height="100%" src="img/Logo/Shawn_Flat.png"><br>
+      <div class="Resume" style="margin: 0%">
+        <div class="tab">
+          <button class="tablinks" id="defaultTab" onclick="openTab(event, 'Skills')">Skills</button>
+          <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+          <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+          <button class="tablinks" onclick="openTab(event, 'Projects')">My Projects</button>
+          <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+        </div>
+        
+        <div id="Skills" class="tabcontent">
+          <div class="row">
+              <div class="column" id="column1">
+                <p style="color: darkgrey">Programming</p>
+                <p class="skill">Java</p>
+                <p class="skill">Kotlin</p>
+                <p class="skill">HTML 5</p>
+                <p class="skill">javaScript</p>
+                <p class="skill">CSS 3</p>
+                <p class="skill">C#</p>
+                <p class="skill">Python</p>
+                <p class="skill">C</p>
+              </div>
+              <div class="column" id="column2">
+                  <p style="color: darkgrey">Softwares</p>
+                  <p class="skill">Unity 3D</p>
+                  <p class="skill">Visual Studio</p>
+                  <p class="skill">Android Studio</p>
+                  <p class="skill">Codeblocks</p>
+                  <p class="skill">Blender</p>
+                  <p class="skill">GIMP</p>
+                  <p class="skill">Visual Studio</p>
+              </div>
+              <div class="column" id="column3">
+                  <p style="color: darkgrey">Other</p>
+                  <p class="skill">Visual Art</p>
+                  <p class="skill">Graphic Design</p>
+                  <p class="skill">Video Game Development</p>
+                  <p class="skill">Ethical Hacking</p>
+                  <p class="skill">Linux</p>
 
-        <a onclick="scrollTo(arrow)" id="arrow"><img class="animated bounce infinite" width="80px" height="40px" src="img/Arrow.png"></a>
-      </div>
+              </div>
+          </div>
+        </div>
+        
+        <div id="Experience" class="tabcontent">
+            <div class="row">
+                <div class="column" id="column1">
+                  <div class="job-item">
+                    <h3>Web Designer</h3>
+                    <h4>Omega Renovation, CA</h4>
+                    <p>Created the company website at <a href="http://omegarenovation.ca">http://omegarenovation.ca</a></p>
+                  </div>
 
-      <div id="portfolio" class="portfolio">
+                  <div class="job-item">
+                      <h3>Game Developer</h3>
+                      <h4>Jamaica Game Dev. Hub</h4>
+                      <p>Assisted in teaching game development in Unity3D to students at JGDH workshops</p>
+                    </div>
+                </div>
 
-        <div class="about">
-          <h2 style="font-family:t248;">Hi, I'm Shawn.</h2>
-          <p style="color:black;" class="lead">
-            <b>
-            I am a student at Campion College, Jamaica;<br>
-            I prefer to express myself with code and art. I encourage good competition and new ideas.
-          </b>
-          </p>
+                <div class="column" id="column2">
+                    <div class="job-item">
+                      <h3>Android Developer</h3>
+                      <h4>Reggae Beats App</h4>
+                      <p>converted the authentication system to use Firebase, and added a subscription based content delivery system</p>
+                    </div>
+                </div>
+
+                <div class="column" id="column3">
+                    <div class="job-item">
+                      <h3>Vice President</h3>
+                      <h4>Software Engineering Club, Campion College</h4>
+                      <p>Mentoring students in C, web design, game development, app development, ethical hacking etc.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    	  <div class="hobbies">
-      		<h2 class="head">MY HOBBIES</h2>
-          <br>
-      		<img src="img/pencil-xxl.png">
-      		<img src="img/music-2-xxl.png">
-      		<img src="img/code-xxl.png">
-      		<img src="img/web-icon.png">
-      		<img src="img/tv-xxl.png">
-    	  </div>
+        <div id="Education" class="tabcontent">
+            <div class="row">
+                <div class="column" style="border: darkred solid 1px">
+                  <h2 style="color: darkred">Campion College</h2>
+                  <h5>105 Hope Road, Kingston 6, Jamaica</h5>
+                  <br>
 
-        <div class="work">
-          <h2 class="head">MY WORK</h2>
+                  <div style="padding-left: 20px;text-align: left">
+                      <h4>CSEC Subjects</h4>
+                      <ul>
+                        <li>Mathematics (Grade 1, straigh A)</li>
+                        <li>Physics (Grade 1, straigh A)</li>
+                        <li>Information Technology (Grade 1, straigh A)</li>
+                        <li>Spanish (Grade 1, straigh A)</li>
+                        <li>English Lang. (Grade 1)</li>
+                        <li>Visual Art (Grade 1)</li>
+                        <li>Biology (Grade 1)</li>
+                        <li>Principles of Business (Grade 1)</li>
+                        <li>Principles of Accounts (Grade 2)</li>
+                        <li>English Lit. (Grade 2)</li>
+                        <li>Electical & Electronic Tech. (Grade 2)</li>
+                      </ul>
 
-          <ul style="list-style-type: none;margin:0px;padding:0px;">
-            <li style="display:inline-block; margin:10px;">
-              <div>
-      					<img width="300px" height="150px" src="img/work/omegareno.png"><br>
-      					<a style="background:#009dff;display:block;color:white;width:290px"
-                href="http://omegarenovation.ca">VISIT WEBPAGE</a>
+                      <h4>Awards</h4>
+                      <ul>
+                        <li>CXC Magis Award</li>
+                        <li>CSEC Certificate in Business Studies</li>
+                      </ul>
+
+                      <h4>Clubs & Societies</h4>
+                      <ul>
+                        <li>Software Engineering Club</li>
+                        <li>Digital Media Team</li>
+                        <li>Sixth Form Association</li>
+                        <li>Big Brother/Sister Programme</li>
+                      </ul>
+                  </div>
+                </div>
+
+                <div class="column" style="text-align: left; padding-left: 50px">
+                    <h3>Other</h3>
+                    <ul>
+                        <li>HTML&CSS Certification</li>
+                    </ul>
+  
+                </div>
+
+                <div class="column"></div>
               </div>
-            </li>
-
-            <li style="display:inline-block; margin:10px;">
-              <div>
-      					<img width="300px" height="150px" src="img/work/cortechx.png"><br>
-      					<a style="background:#009dff;display:block;color:white;width:290px"
-                 href="http://cortechx.github.io">VISIT WEBPAGE</a>
-              </div>
-            </li>
-
-            <li style="display:inline-block; margin:10px;">
-              <div>
-      					<img width="300px" height="150px" src="img/work/dopple.png"><br>
-      					<a style="background:#009dff;display:block;color:white;width:290px"
-                href="https://play.google.com/store/apps/details?id=com.cortechx.dopple2">INSTALL</a>
-              </div>
-            </li>
-
-            <li style="display:inline-block; margin:10px;">
-              <div>
-      					<img width="300px" height="150px" src="img/work/dive.png"><br>
-      					<a style="background:#009dff;display:block;color:white;width:290px"
-                 href="">COMING TO GOOGLE PLAY</a>
-              </div>
-            </li>
-
-            <li style="display:inline-block; margin:10px;">
-              <div>
-      					<img width="300px" height="150px" src="img/work/kodah.png"><br>
-      					<a style="background:#009dff;display:block;color:white;width:290px"
-                 href="">COMING TO GOOGLE PLAY</a>
-              </div>
-            </li>
-          </ul>
-
         </div>
 
-    	  <div class="skills">
-      		<center>
-            <h2 class="head" style="color:black;">MY SKILLS</h2>
-
-            <ul style="list-style-type: none;margin:0px;padding:0px;">
-              <!--HTML-->
-              <li style="display:inline-block;">
-                <div class="skill">
-                  <img width="150px" height="150px" src="img/BG/orange-circle.png"/>
-                  <h3 style="color:#999">HTML</h3>
-                </div>
-              </li>
-              <!--CSS-->
-              <li style="display:inline-block;">
-                <div class="skill">
-                  <img width="150px" height="150px" src="img/BG/blue-circle.png"/>
-                  <h3 style="color:#999">CSS</h3>
-                </div>
-              </li>
-              <!--JS-->
-              <li style="display:inline-block;">
-                <div class="skill">
-                  <img width="150px" height="150px" src="img/BG/yellow-circle.png"/>
-                  <h3 style="color:#999">JS</h3>
-                </div>
-              </li>
-              <!--JAVA-->
-              <li style="display:inline-block;">
-                <div class="skill">
-                  <img width="150px" height="150px" src="img/BG/red-circle.png"/>
-                  <h3 style="color:#999">JAVA</h3>
-                </div>
-              </li>
-              <!--ANDROID-->
-              <li style="display:inline-block;">
-                <div class="skill">
-                  <img width="150px" height="150px" src="img/BG/green-circle.png"/>
-                  <h3 style="color:#999">ANDROID</h3>
-                </div>
-              </li>
-              <!--UNITY-->
-              <li style="display:inline-block;">
-                <div class="skill">
-                  <img width="150px" height="150px" src="img/BG/black-circle.png"/>
-                  <h3 style="color:#999">UNITY</h3>
-                </div>
-              </li>
-            </ul>
-          </center>
-      	</div>
-
-        <div class="contact">
+        <div id="Projects" class="tabcontent">
+          <h3>Under Construction</h3>
+        </div>
+        
+        <div id="Contact" class="tabcontent">
           <h2 class="head">Get In Touch</h2><br>
           <p id="c-p">Let's start a project together:</p> <br>
-
+  
           <ul>
             <li><a href="http://facebook.com/shawn.grant.1804"><img src="img/facebook-3-xxl.png" alt="fb"></a></li>
             <li><a href="http://instagram.com/shawn.grant.1804"><img src="img/inst.png" alt="ig"></a></li>
             <li><a href="https://www.linkedin.com/in/shawn-grant-431b39109/"><img src="img/linkedin-3-512.png" alt="in"></a></li>
             <li><a href="http://github.com/shawn-grant"><img src="img/Git-Icon-White.png" alt="gh"></a></li>
           </ul>
-
+  
           <br>
           <p style="font-family:arial;">
             <img width="20px" height="20px" src ="img/email.png"> shawngrant333@gmail.com <br>
             <img width="20px" height="20px" src ="img/phone-icon.png"> +1(876) 378-0190</p><br>
-
+  
           <a id="ctx" href="http://cortechx.github.io">CORTECHX</a>
         </div>
-
+      </div>
       </div>
 
   	<!--my javascript-->
