@@ -7,7 +7,6 @@ body {
 .main-block {
   text-align: center;
   margin-top:30px;
-
 }
 
 .title{
@@ -20,8 +19,14 @@ body {
 }
 
 #main-pic{
-  webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
+}
+
+.about{
+  text-align:center;
+  padding: 50px;
+  background: white;
 }
 
 .tab {
@@ -61,6 +66,7 @@ body {
   animation: fadeEffect 1s;
   background: #000;
   color: #fff;
+  padding-bottom: 50px;
 }
 
 /* Fade in tabs */
@@ -97,6 +103,13 @@ body {
   }
 }
 
+.skill:hover{
+  -webkit-animation:fadeIn 1s;
+  -moz-animation:fadeIn 1s;
+  -ms-animation:fadeIn 1s;
+  animation:fadeIn 1s;
+}
+
 #column1 .skill{
   background: rgba(60, 120, 131, 0.5);
   padding: 10px;
@@ -114,32 +127,34 @@ body {
 }
 
 .job-item{
-  border: #727272 solid 1px;
   margin: 5px;
-}
-
-.job-item h3{
-  color: #999;
-}
-#column1 .job-item h3{
-  color: rgb(60, 120, 131);
-}
-#column2 .job-item h3{
-  color: rgb(60, 131, 75);
-}
-#column3 .job-item h3{
-  color: rgb(131, 60, 60);
+  min-height: 150px;
+  box-shadow:0px 0px 5px rgba(255, 255, 255, 0.658);
+  padding: 5px;
 }
 
 
-.about{
-  text-align:center;
-  padding: 50px;
-  background: white;
+#campion{
+  background: rgb(36, 36, 36);
 }
+
+.project{
+  box-shadow:0px 0px 5px rgba(255, 255, 255, 0.658);
+  margin: 5px;
+  min-height: 150px;
+  padding: 5px
+}
+
+#outline{
+  -webkit-filter: drop-shadow(0px 0px 2px #fff);
+  filter: drop-shadow(0px 0px 2px #fff);
+}
+
 
 #Contact{
   text-align: center;
+  background: #000;
+  color: #fff;
 }
 
 #Contact ul li{
@@ -161,5 +176,4 @@ body {
 
 a{
   text-decoration:none;
-  text-align: center;
 }
