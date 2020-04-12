@@ -1,5 +1,5 @@
-function scrollTo(id) {
-	$('html, body').animate({
+function scrollToElement(id) {
+	$([document.documentElement, document.body]).animate({
 								scrollTop: $(id).offset().top
 							}, 'slow');
 }
@@ -19,6 +19,12 @@ function openTab(evt, tabName) {
 	}
 	document.getElementById(tabName).style.display = "block";
 	evt.currentTarget.className += " active";
+
+	scrollToElement("#tab");
 }
 
-document.getElementById("defaultTab").click();
+function closeTab(tab){
+	
+}
+
+//document.getElementById("defaultTab").click();

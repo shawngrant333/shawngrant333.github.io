@@ -4,170 +4,158 @@ body {
   padding-top: 30px;
 }
 
-.main-block {
-  text-align: center;
-  margin-top:30px;
-}
-
-.title{
-  color:#999;
-  font-size:30px;
-}
-
-#intro{
-  color:#000;
-}
-
 #main-pic{
   -webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
+  margin-bottom: 20px;
 }
 
 .about{
   text-align:center;
   padding: 50px;
   background: white;
+  margin-top: 50px;
+}
+
+#intro-social li{
+  margin-top: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+#intro-social li a{
+  text-decoration: none;
+  background: rgb(118, 60, 255);
+  margin: 0px 20px 0px 0px;
+  padding: 10px 30px 10px 30px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  color: #fff;
+}
+#intro-social li a:hover{
+  background: rgb(77, 44, 156);
 }
 
 .tab {
-  overflow: hidden;
-  background-color: rgb(36, 36, 36);
-  color: #fff;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 20px 5px 0px;
   transition: 0.3s;
   font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(217, 222, 255);
+  border: none;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(102, 105, 255);
+  color: #fff;
+  border: none;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
-  min-height: 400px;
   padding: 6px 12px;
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
-  background: #000;
-  color: #fff;
+  background: rgb(255, 255, 255);
+  color: #000;
   padding-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  margin: 10px 20px 0px 20px;
+  border-radius: 10px;
+  transform-origin: top;  
+}
+.tabcontent-closed {
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  background: rgb(255, 255, 255);
+  color: #000;
+  padding-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  margin: 10px 20px 0px 20px;
+  border-radius: 10px;
+  transform-origin: top;  
+}
+
+#inline-list{
+padding: 0;
+}
+#inline-list li{
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  margin: 10px;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  border-radius: 10px;
 }
 
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  0% {
+    opacity: 0; 
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1; 
+    transform: scaleY(1);
+  }
 }
-
 @keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-.column {
-  float: left;
-  width: 33%;
-  text-align: center;
-}
-
-.row{
-  margin: auto;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
   }
 }
 
-.skill:hover{
-  -webkit-animation:fadeIn 1s;
-  -moz-animation:fadeIn 1s;
-  -ms-animation:fadeIn 1s;
-  animation:fadeIn 1s;
-}
 
-#column1 .skill{
-  background: rgba(60, 120, 131, 0.5);
-  padding: 10px;
-  margin: 5px;
-}
-#column2 .skill{
-  background: rgba(60, 131, 75, 0.5);
-  padding: 10px;
-  margin: 5px;
-}
-#column3 .skill{
-  background: rgba(131, 60, 60, 0.5);
-  padding: 10px;
-  margin: 5px;
-}
-
-.job-item{
-  margin: 5px;
-  min-height: 150px;
-  box-shadow:0px 0px 5px rgba(255, 255, 255, 0.658);
-  padding: 5px;
-}
-
-
-#campion{
-  background: rgb(36, 36, 36);
-}
-
-.project{
-  box-shadow:0px 0px 5px rgba(255, 255, 255, 0.658);
-  margin: 5px;
-  min-height: 150px;
-  padding: 5px
-}
-
-#outline{
-  -webkit-filter: drop-shadow(0px 0px 2px #fff);
-  filter: drop-shadow(0px 0px 2px #fff);
-}
-
-
-#Contact{
+#contact{
   text-align: center;
   background: #000;
   color: #fff;
+  margin-top: 50px;
+  padding: 20px 12px 50px 12px;
 }
 
-#Contact ul li{
+#contact ul li{
   display: inline-block;
   margin-right: 20px;
 }
 
-#Contact ul li img{
-  width: 30px;
-  height: 30px;
+#contact ul li img{
+  width: 35px;
+  height: 35px;
   margin-bottom: 10px;
 }
-#Contact ul li img:hover{
+#contact ul li img:hover{
   -webkit-animation:pulse 1s infinite;
   -moz-animation:pulse 1s infinite;
   -ms-animation:pulse 1s infinite;

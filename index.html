@@ -4,223 +4,172 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is my personal web-portfolio">
+    <meta name="description" content="I'm a web designer, app & game developer and graphic designer based in Jamaica. I have experienced using tools like Android Studio, Unity 3D and Visual Studio.">
     <meta name="author" content="Shawn Grant">
     <link rel="icon" href="img/Logo/SG_Logo_mk2.png">
-    <title>Shawn Grant</title>
+    <title>Shawn Grant | Developer</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles -->
     <link href="css/styles.css" rel="stylesheet">
     <!-- Animate CSS -->
-    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <div class="main-block">
-      <h1 class="title">Shawn Grant</h1>
-      <h3 id="intro">Android Developer | Web Designer | Graphic Designer</h3>
-      <img id="main-pic" width="300px" height="100%" src="img/Logo/Shawn_Flat.png"><br>
-    </div>
-
     <div class="portfolio">
 
       <div class="about">
-        <h2>Hi, I'm Shawn.</h2>
-        <p style="color:black; font-size: 17px;">
-          Jamaican student with a paasion for programming and art.<br>
-          I am experienced in Android app and game development, web design and graphip design. 
+        <img id="main-pic" width="200px" height="200px" src="img/Logo/Me_6.png"><br> <!--3 and 6 look best-->
+        <h1>Hi, I'm Shawn.</h1>
+        <p style="color:black; font-size: 20px;">
+          I'm a web designer, app & game developer and graphic designer based in Jamaica.<br>
+          I have experienced using tools like Android Studio, Unity 3D and Visual Studio. 
         </p>
+       
+        <ul id="intro-social">
+          <li><a href="https://www.linkedin.com/in/shawn-grant-431b39109/" target="_black">LinkedIn</a></li>
+          <li><a href="https://github.com/shawn-grant" target="_blank">GitHub</a></li>
+        </ul>
+        <br>
+        
       </div>
 
-      <div class="Resume" style="margin: 0%">
-        <div class="tab">
-          <button class="tablinks" id="defaultTab" onclick="openTab(event, 'Skills')">Skills</button>
-          <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
-          <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+      <div class="Resume" style="text-align: center;margin: auto;">
+        <div class="tab" id="tab">
           <button class="tablinks" onclick="openTab(event, 'Projects')">My Projects</button>
-          <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+          <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+          <button class="tablinks" onclick="openTab(event, 'Skills')">My Skills</button>
+          <button class="tablinks" onclick="scrollToElement('#contact')">Contact Me</button>
         </div>
         
         <div id="Skills" class="tabcontent">
-          <div class="row">
-              <div class="column" id="column1">
-                <p style="color: darkgrey">Programming</p>
-                <p class="skill">Java</p>
-                <p class="skill">Kotlin</p>
-                <p class="skill">HTML 5</p>
-                <p class="skill">javaScript</p>
-                <p class="skill">CSS 3</p>
-                <p class="skill">C#</p>
-                <p class="skill">Python</p>
-                <p class="skill">C</p>
-              </div>
-              <div class="column" id="column2">
-                  <p style="color: darkgrey">Softwares</p>
-                  <p class="skill">Unity 3D</p>
-                  <p class="skill">Visual Studio</p>
-                  <p class="skill">Android Studio</p>
-                  <p class="skill">CodeBlocks</p>
-                  <p class="skill">Blender</p>
-                  <p class="skill">GIMP</p>
-                  <p class="skill">Visual Studio</p>
-              </div>
-              <div class="column" id="column3">
-                  <p style="color: darkgrey">Other</p>
-                  <p class="skill">Visual Art</p>
-                  <p class="skill">Graphic Design</p>
-                  <p class="skill">Video Game Development</p>
-                  <p class="skill">Ethical Hacking</p>
-                  <p class="skill">Linux</p>
-
-              </div>
-          </div>
+          <button onclick="closeTab('Skills')" style="float:right;border: none;background: none;">X</button><br>
+          <ul id="inline-list">
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>HTML 5</li>
+            <li>javaScript</li>
+            <li>CSS</li>
+            <li>Firebase</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>Unity 3D</li>
+            <li>Video Game Development</li>
+            <li>Visual Studio</li>
+            <li>Android Studio</li>
+            <li>CodeBlocks</li>
+            <li>Blender</li>
+            <li>Graphic Design</li>
+            <li>Linux</li>
+          </ul>
         </div>
         
         <div id="Experience" class="tabcontent">
-            <div class="row">
-                <div class="column" id="column1">
-                  <div class="job-item">
-                    <h3>Web Designer</h3>
-                    <h4>Omega Renovation, CA</h4>
-                    <p>Created the company website at <a href="http://omegarenovation.ca">http://omegarenovation.ca</a></p>
-                  </div>
-
-                  <div class="job-item">
-                      <h3>Game Developer</h3>
-                      <h4>Jamaica Game Dev. Hub</h4>
-                      <p>Assisted in teaching game development in Unity3D to students at JGDH workshops</p>
-                    </div>
-                </div>
-
-                <div class="column" id="column2">
-                    <div class="job-item">
-                      <h3>Android Developer</h3>
-                      <h4>Reggae Beats App</h4>
-                      <p>converted the authentication system to use Firebase, and added a subscription based content delivery system</p>
-                    </div>
-                </div>
-
-                <div class="column" id="column3">
-                    <div class="job-item">
-                      <h3>Vice President</h3>
-                      <h4>Software Engineering Club, Campion College</h4>
-                      <p>Mentoring students in C, web design, game development, app development, ethical hacking etc.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="Education" class="tabcontent">
-            <div class="row">
-                <div class="column" id="campion">
-                  <h2 style="color: rgb(255, 255, 255)">Campion College</h2>
-                  <h5>105 Hope Road, Kingston 6, Jamaica</h5>
-                  <br>
-
-                  <div style="padding-left: 20px;text-align: left">
-                      <h4>CSEC Subjects</h4>
-                      <ul>
-                        <li>Mathematics (Grade 1, straight A)</li>
-                        <li>Physics (Grade 1, straight A)</li>
-                        <li>Information Technology (Grade 1, straight A)</li>
-                        <li>Spanish (Grade 1, straight A)</li>
-                        <li>English Lang. (Grade 1)</li>
-                        <li>Visual Art (Grade 1)</li>
-                        <li>Biology (Grade 1)</li>
-                        <li>Principles of Business (Grade 1)</li>
-                        <li>Principles of Accounts (Grade 2)</li>
-                        <li>English Lit. (Grade 2)</li>
-                        <li>Electical & Electronic Tech. (Grade 2)</li>
-                      </ul>
-
-                      <h4>Awards</h4>
-                      <ul>
-                        <li>High School Diploma</li>
-                        <li>CXC Magis Award</li>
-                        <li>CSEC Certificate in Business Studies</li>
-                      </ul>
-
-                      <h4>Clubs & Societies</h4>
-                      <ul>
-                        <li>Software Engineering Club</li>
-                        <li>Digital Media Team</li>
-                        <li>Sixth Form Association</li>
-                        <li>Big Brother/Sister Programme</li>
-                      </ul>
-                  </div>
-                </div>
-
-                <div class="column" style="text-align: left; padding-left: 50px">
-                    <h3>Other</h3>
-                    <ul>
-                        <li>HTML&CSS Certification</li>
-                    </ul>
-  
-                </div>
-
-                <div class="column"></div>
+          <button onclick="closeTab('Experience')" style="float:right;border: none;background: none;">X</button><br>
+          <ul id="inline-list">
+            <li>
+              <div>
+                <h3>Hackathon Organizer</h3>
+                <h4>FortesHacks, Campion College</h4>
+                <p><a target="_blank" href="https://instagram.com/forteshacks_hackathon"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">View Event</a></p>
               </div>
+            </li>
+
+            <li>
+              <div>
+                <h3>Web Designer</h3>
+                <h4>Omega Renovation, CA</h4>
+                <p><a target="_blank" href="http://omegarenovation.ca"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">View Website</a></p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h3>Game Developer</h3>
+                <h4>Cortechx Studios, JM</h4>
+                <p><a target="_blank" href="https://instagram.com/cortechx"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">Download Games</a></p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h3>Robotics Instructor</h3>
+                <h4>Halls Of Learning</h4>
+                <p><a target="_blank" href="https://www.instagram.com/hallsoflearning/"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">Learn More</a></p>
+              </div>
+            </li>
+            <li><a target="_blank" href="https://docs.google.com/document/d/1PDOooSUSkq_dCKqhsZPk8MBHrpRWa-Kju2_vuGA5Ph0/edit?usp=sharing"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">My Resume</a></li>
+          </ul>
+      
         </div>
 
         <div id="Projects" class="tabcontent">
-            <div class="row">
-                <div class="column">
-                  <div class="project">
-                    <h3><img width="50px" height="50px" src="https://lh3.googleusercontent.com/FZO8ZSNzmvSSDZLB-n2Fk40o3Kb0sUiHspSbZPKlpDuA7JvU593kO28R9q-mA7Z8_6-6=s180-rw">
-                      Dopple</h3>
-                    <p>Mobile video game published on <a href="https://play.google.com/store/apps/details?id=com.cortechx.dopple2">Google Play</a></p>
-                  </div>
-                  <div class="project">
-                      <h3><img width="50px" height="50px" src="https://www.materialui.co/materialIcons/action/record_voice_over_white_192x192.png">
-                        Voice Assistant</h3>
-                      <p>Voice assistant written in Python. View on <a href="https:/github.com/shawn-grant/PythonVoiceAssistant/">Github</a></p>
-                  </div>
-                </div>
+          <button onclick="closeTab('Projects')" style="float:right;border: none;background: none;">X</button><br>
+          <ul id="inline-list">
+            <li style="border-bottom: 4px solid rgb(118, 60, 255);">
+              <div>
+                <h3><img width="70px" height="45px" src="http://omegarenovation.ca/img/logo_transparent_glow.png">Omega Renovation</h3>
+                <p>The company website</p>
+                <p><a target="_blank" href="http://omegarenovation.ca"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">View Site</a></p>
+              </div>
+            </li>
 
-                <div class="column">
-                    <div class="project">
-                        <h3><img id="outline" width="50px" height="50px" src="https://lh3.googleusercontent.com/JdH_BRyy6efqdT_CNEsPQAx9x6sbs3oS6efCbic8Krp7H5kC4FtwVzF_cZ4H9BBuxDc=s180-rw">
-                          Uprush</h3>
-                        <p>Mobile video game published on <a href="https://play.google.com/store/apps/details?id=com.cortechx.uprush">Google Play</a></p>
-                    </div>
-                    <div class="project">
-                        <h3><img width="50px" height="50px" src="https://raw.githubusercontent.com/shawn-grant/ZenCypher/master/ZenCypherIcon.ico">
-                          ZenCypher</h3>
-                          <p>C console app to encrypt text messages using a custom cypher. View on <a href="https:/github.com/shawn-grant/ZenCypher/">Github</a></p>                    </div>
-                </div>
+            <li style="border-bottom: 4px solid rgb(118, 60, 255);">
+              <div>
+                <h3><img width="50px" height="50px" src="https://lh3.googleusercontent.com/FZO8ZSNzmvSSDZLB-n2Fk40o3Kb0sUiHspSbZPKlpDuA7JvU593kO28R9q-mA7Z8_6-6=s180-rw">Dopple</h3>
+                <p>Mobile video game published on Google Play Store</p>
+                <p><a target="_blank" href="https://play.google.com/store/apps/details?id=com.cortechx.dopple2"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">Download</a></p>
+              </div>
+            </li>
 
-                <div class="column">
-                    <div class="project">
-                        <h3><img width="100px" height="70px" src="http://omegarenovation.ca/img/logo_transparent_glow.png">
-                          Omega Renovation</h3>
-                        <p>A company website. <a href="http://omegarenovation.ca">view here</a></p>
-                    </div>
-                </div>
-            </div>
+            <li style="border-bottom: 4px solid rgb(118, 60, 255);">
+              <div>
+                <h3><img id="outline" width="50px" height="50px" src="https://lh3.googleusercontent.com/JdH_BRyy6efqdT_CNEsPQAx9x6sbs3oS6efCbic8Krp7H5kC4FtwVzF_cZ4H9BBuxDc=s180-rw">Uprush</h3>
+                <p>Mobile video game published on Google Play</p>
+                <p><a target="_blank" href="https://play.google.com/store/apps/details?id=com.cortechx.uprush"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">Download</a></p>
+              </div>
+            </li>
+
+            <li style="border-bottom: 4px solid rgb(118, 60, 255);">
+              <div>
+                <h3><img width="50px" height="50px" src="https://raw.githubusercontent.com/shawn-grant/ZenCypher/master/ZenCypherIcon.ico">ZenCypher</h3>
+                  <p>C console app to encrypt text messages using a custom cypher</p>
+                  <p><a target="_blank" href="https:/github.com/shawn-grant/ZenCypher"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">View on GitHub</a></p>
+              </div>
+            </li>
+
+            <li style="border-bottom: 4px solid rgb(118, 60, 255);">
+              <div>
+                <h3><img width="50px" height="50px" src="https://img.pngio.com/mic-icon-mic-microphone-icon-png-and-vector-for-free-download-mic-icon-png-512_512.png">Voice Assistant</h3>
+                <p>Voice assistant written in Python</p>
+                <p><a target="_blank" href="https:/github.com/shawn-grant/PythonVoiceAssistant"><img style="margin: 5px;" src="img/link.png" width="20px" height="20px">View on GitHub</a></p>
+              </div>
+            </li>
+          </ul>
         </div>
         
-        <div id="Contact" class="tabcontent">
-          <h2 class="head">Get In Touch</h2><br>
-          <p id="c-p">Let's start a project together:</p> <br>
-  
-          <ul>
-            <li><a href="http://facebook.com/shawn.grant.1804"><img src="img/facebook-3-xxl.png" alt="fb"></a></li>
-            <li><a href="http://instagram.com/shawn.grant.1804"><img src="img/inst.png" alt="ig"></a></li>
-            <li><a href="https://www.linkedin.com/in/shawn-grant-431b39109/"><img src="img/linkedin-3-512.png" alt="in"></a></li>
-            <li><a href="http://github.com/shawn-grant"><img src="img/Git-Icon-White.png" alt="gh"></a></li>
-          </ul>
-  
-          <br>
-          <p style="font-family:arial;">
-            <img width="20px" height="20px" src ="img/email.png"> shawngrant333@gmail.com <br>
-            <img width="20px" height="20px" src ="img/phone-icon.png"> +1(876) 325-0789</p><br>
-  
-          <a id="ctx" href="http://cortechx.github.io">CORTECHX</a>
-        </div>
       </div>
+
+      <div id="contact">
+        <h2 >Get In Touch</h2><br>
+        <p>---- Let's work together ----</p> <br>
+
+        <ul>
+          <li><a href="http://instagram.com/shawnrgrant" target="_black"><img src="img/inst.png" alt="ig"></a></li>
+          <li><a href="https://www.linkedin.com/in/shawn-grant-431b39109/" target="_blank"><img src="img/linkedin-3-512.png" alt="in"></a></li>
+          <li><a href="http://github.com/shawn-grant" target="_blank"><img src="img/Git-Icon-White.png" alt="gh"></a></li>
+        </ul>
+
+        <br>
+        <p style="font-family:arial;">
+        <img width="20px" height="20px" src ="img/email.png"> shawngrant333@gmail.com <br>
+        <img width="20px" height="20px" src ="img/phone-icon.png"> +1(876) 325-0789</p><br>
+
       </div>
+    </div>
 
 
   	<!--my javascript-->
