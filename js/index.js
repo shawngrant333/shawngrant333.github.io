@@ -1,34 +1,18 @@
-function scrollToElement(id) {
-	$([document.documentElement, document.body]).animate({
-								scrollTop: $(id).offset().top
-							}, 'slow');
-}
 
-function openTab(evt, tabName) {
+function openTab(tabName) {
 
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	tablinks = document.getElementsByClassName("tablinks");
+	document.querySelector('#' + tabName).classList.remove("close");
+	document.querySelector('#' + tabName).classList.add("open");
 
-	//
-
-
-	if (evt.currentTarget.className == "tablinks active") { //already active
-		evt.currentTarget.className = "tablinks"
-		$("#"+tabName).slideUp("slow");
-	} else { //make active
-		for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-		}
-		//document.getElementById(tabName).style.display = "block";
-
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = "tablinks";
-		}
-		evt.currentTarget.className += " active";
-
-		$("#"+tabName).slideDown("slow");
-	}
-	scrollToElement("#intro-social");
+	document.querySelector('#' + tabName).querySelector('.content').classList.remove("hide");
+	document.querySelector('#' + tabName).querySelector('.content').classList.add("show");
 }
 //document.getElementById("defaultTab").click();
+
+function closeTab(tabName) {
+	document.querySelector('#' + tabName).classList.remove("open");
+	document.querySelector('#' + tabName).classList.add("close");
+
+	document.querySelector('#' + tabName).querySelector('.content').classList.remove("show");
+	document.querySelector('#' + tabName).querySelector('.content').classList.add("hide");
+}
